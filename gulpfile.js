@@ -25,7 +25,7 @@ gulp.task('templates:compile', function buildHTML() {
         .pipe(pug({
             pretty: true
         }))
-        .pipe(gulp.dest('build'))
+        .pipe(gulp.dest('build'));
 });
 
 /*Styles compile*/
@@ -60,7 +60,7 @@ gulp.task('sprite', function (cb) {
 /*Clean*/
 
 gulp.task('clean', function del(cb) {
-    return rimraf('build', cb)
+    return rimraf('build', cb);
 });
 
 /* Copy fonts*/
